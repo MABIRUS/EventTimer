@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\Курсовая работа.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\Курсовая работа.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\Курсовая работа.csproj",
+        "projectName": "Курсовая работа",
+        "projectPath": "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\Курсовая работа.csproj",
+        "packagesPath": "C:\\Users\\MABIRUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MABIRUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

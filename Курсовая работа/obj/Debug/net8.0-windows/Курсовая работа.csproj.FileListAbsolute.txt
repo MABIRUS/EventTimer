@@ -1,0 +1,20 @@
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\bin\Debug\net8.0-windows\Курсовая работа.exe
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\bin\Debug\net8.0-windows\Курсовая работа.deps.json
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\bin\Debug\net8.0-windows\Курсовая работа.runtimeconfig.json
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\bin\Debug\net8.0-windows\Курсовая работа.dll
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\bin\Debug\net8.0-windows\Курсовая работа.pdb
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа_MarkupCompile.cache
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа_MarkupCompile.lref
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.g.resources
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.AssemblyInfoInputs.cache
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.AssemblyInfo.cs
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.csproj.CoreCompileInputs.cache
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.dll
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\refint\Курсовая работа.dll
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.pdb
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.genruntimeconfig.cache
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\ref\Курсовая работа.dll
