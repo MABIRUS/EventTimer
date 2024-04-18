@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\Курсовая работа.csproj": {}
+    "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая работа\\Курсовая работа\\Курсовая работа.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\Курсовая работа.csproj": {
+    "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая работа\\Курсовая работа\\Курсовая работа.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\Курсовая работа.csproj",
+        "projectUniqueName": "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая работа\\Курсовая работа\\Курсовая работа.csproj",
         "projectName": "Курсовая работа",
-        "projectPath": "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\Курсовая работа.csproj",
+        "projectPath": "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая работа\\Курсовая работа\\Курсовая работа.csproj",
         "packagesPath": "C:\\Users\\MABIRUS\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\MABIRUS\\Desktop\\Учеба\\1374\\3 курс 2 семестр\\ООП\\Курсовая Работа\\Курсовая работа\\obj\\",
         "projectStyle": "PackageReference",

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,8 @@ namespace Курсовая_работа.ViewModel
 {
     internal class MainWindowViewModel : BaseViewModel
     {
-        public List<EventModel> EventList;
+        public ObservableCollection<EventViewModel> _eventList;
+        public IEnumerable<EventViewModel> EventList => _eventList;
 
         private TimeModel _time;
 
@@ -25,9 +27,13 @@ namespace Курсовая_работа.ViewModel
 
         public MainWindowViewModel()
         {
-            EventList = new List<EventModel>;
+            _eventList = new ObservableCollection<EventViewModel>();
             Time = new TimeModel();
             StartTimer();
+
+            _eventList.Add(new EventViewModel(new EventModel("Событие 1", "14:32:17", "14:42:17")));
+            _eventList.Add(new EventViewModel(new EventModel("Событие 2", "14:12:11", "15:22:37")));
+            _eventList.Add(new EventViewModel(new EventModel("Событие 3", "13:04:24", "14:37:55")));
         }
 
         private void StartTimer()
@@ -42,6 +48,11 @@ namespace Курсовая_работа.ViewModel
         {
             Time.UpdateTime();
             OnPropertyChanged(nameof(Time));
+        }
+
+        public void RemoveAt(int index)
+        {
+            _eventList.RemoveAt(index);
         }
     }
 }

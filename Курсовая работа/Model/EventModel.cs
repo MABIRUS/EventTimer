@@ -8,15 +8,15 @@ namespace Курсовая_работа.Model
 {
     internal class EventModel
     {
-        private string _eventName { get; }
-        private string _startTime { get; }
-        private string _stopTime { get; }
+        public string EventName { get; }
+        public string StartTime { get; }
+        public string StopTime { get; }
 
-        public EventModel(string eventName, DateTime startTime, DateTime stopTime)
+        public EventModel(string eventName, string startTime, string stopTime)
         {
-            _eventName = eventName;
-            _startTime = startTime.ToString("HH:mm:ss");
-            _stopTime = stopTime.ToString("HH:mm:ss");
+            EventName = eventName;
+            StartTime = startTime;
+            StopTime = stopTime;
         }
 
     }

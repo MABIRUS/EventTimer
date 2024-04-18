@@ -18,3 +18,4 @@ C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Ку
 C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.pdb
 C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.genruntimeconfig.cache
 C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\ref\Курсовая работа.dll
+C:\Users\MABIRUS\Desktop\Учеба\1374\3 курс 2 семестр\ООП\Курсовая работа\Курсовая работа\obj\Debug\net8.0-windows\Курсовая работа.sourcelink.json

@@ -15,7 +15,7 @@
 
         <TextBlock Text="{Binding Time}" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <ListView Grid.Row="1" HorizontalAlignment="Center">
+        <ListView Grid.Row="1" HorizontalAlignment="Center" ItemsSource="{Binding EventList}">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -23,30 +23,26 @@
                 </Style>
             </ListView.ItemContainerStyle>
 
-            <ListViewItem/>
-            <ListViewItem/>
-            <ListViewItem/>
-
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Событие">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="Событие 1"/>
+                                <TextBlock Text="{Binding EventName}"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
                     <GridViewColumn Header="Время начала">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="Время начала 1"/>
+                                <TextBlock Text="{Binding StartTime}"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
                     <GridViewColumn Header="Время окончания">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="Время окончания"/>
+                                <TextBlock Text="{Binding StopTime}"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
