@@ -50,7 +50,7 @@
             </ListView.View>
         </ListView>
 
-        <Button Grid.Row="2" Content="Режим слежения" FontSize="20" Command="" Height="50" Width="200"/>
+        <Button Grid.Row="2" Content="Режим слежения" FontSize="20" Command="{Binding Tracking}" Height="50" Width="200"/>
 
     </Grid>
 </Window>

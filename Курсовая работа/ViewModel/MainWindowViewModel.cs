@@ -4,6 +4,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Курсовая_работа.Commands;
 using Курсовая_работа.Model;
 
 namespace Курсовая_работа.ViewModel
@@ -14,6 +16,8 @@ namespace Курсовая_работа.ViewModel
         public IEnumerable<EventViewModel> EventList => _eventList;
 
         private TimeModel _time;
+
+        public ICommand Tracking { get; }
 
         public TimeModel Time
         {
@@ -27,13 +31,11 @@ namespace Курсовая_работа.ViewModel
 
         public MainWindowViewModel()
         {
+            Tracking = new TrackingCommand(this);
+
             _eventList = new ObservableCollection<EventViewModel>();
             Time = new TimeModel();
             StartTimer();
-
-            _eventList.Add(new EventViewModel(new EventModel("Событие 1", "14:32:17", "14:42:17")));
-            _eventList.Add(new EventViewModel(new EventModel("Событие 2", "14:12:11", "15:22:37")));
-            _eventList.Add(new EventViewModel(new EventModel("Событие 3", "13:04:24", "14:37:55")));
         }
 
         private void StartTimer()

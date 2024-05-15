@@ -10,6 +10,8 @@ namespace Курсовая_работа.Model
     {
         private DateTime _currentTime;
 
+        public DateTime CurrentTime => _currentTime;
+
         public override string ToString()
         {
             return _currentTime.ToString("HH:mm:ss");

@@ -19,14 +19,8 @@ namespace Курсовая_работа
     {
         public MainWindow()
         {
-            MainWindowViewModel mainWindowViewModel = new MainWindowViewModel();
             InitializeComponent();
-            DataContext = mainWindowViewModel;
-
-            Thread.Sleep(5000);
-            mainWindowViewModel.RemoveAt(0);
-            Thread.Sleep(5000);
-            mainWindowViewModel.RemoveAt(1);
+            DataContext = new MainWindowViewModel();
         }
     }
 }
