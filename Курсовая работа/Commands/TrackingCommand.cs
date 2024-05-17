@@ -13,8 +13,8 @@ namespace Курсовая_работа.Commands
     internal class TrackingCommand : CommandBase
     {
         private MainWindowViewModel _mainWindowViewModel;
-
         private string _fileName;
+        private List<EventModel> _eventTypes = new List<EventModel>();
 
         public TrackingCommand(MainWindowViewModel mainWindowViewModel)
         {
@@ -24,7 +24,6 @@ namespace Курсовая_работа.Commands
         public override void Execute(object parameter)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-
             string initialDirectory = Directory.GetCurrentDirectory();
             for (int i = 0; i < 3; i++)
             {
@@ -33,13 +32,12 @@ namespace Курсовая_работа.Commands
 
             openFileDialog.InitialDirectory = initialDirectory;
             openFileDialog.ShowDialog();
-
             _fileName = openFileDialog.FileName;
-            Parse();
-
+            LoadEventTypes();
+            GenerateRandomEvents();
         }
 
-        private void Parse()
+        private void LoadEventTypes()
         {
             using (StreamReader reader = new StreamReader(_fileName))
             {
@@ -49,31 +47,51 @@ namespace Курсовая_работа.Commands
                     string[] parts = str.Split(", ");
                     if (parts.Length != 2)
                     {
-                        continue; // Пропускаем некорректные строки
+                        continue;
                     }
 
                     string eventName = parts[0];
                     string durationStr = parts[1];
 
-                    // Парсинг длительности события
                     if (TimeSpan.TryParse(durationStr, out TimeSpan duration))
                     {
-                        DateTime startTime = _mainWindowViewModel.Time.CurrentTime;
-                        DateTime stopTime = startTime.Add(duration);
-
-                        EventModel eventModel = new EventModel
-                        {
-                            EventName = eventName,
-                            StartTime = startTime.ToString("HH:mm:ss"),
-                            StopTime = stopTime.ToString("HH:mm:ss")
-
-                        };
-
-                        _mainWindowViewModel._eventList.Add(new EventViewModel(eventModel));
+                        _eventTypes.Add(new EventModel { EventName = eventName, Duration = duration });
                     }
                 }
             }
         }
 
+        private void GenerateRandomEvents()
+        {
+            Random random = new Random();
+            DateTime currentTime = _mainWindowViewModel.Time.CurrentTime;
+            int eventCount = 20;
+            int minIntervalSeconds = 2;
+            int maxIntervalSeconds = 5;
+
+            for (int i = 0; i < eventCount; i++)
+            {
+                int eventTypeIndex = random.Next(0, _eventTypes.Count);
+                EventModel selectedEvent = _eventTypes[eventTypeIndex];
+
+                if (i > 0)
+                {
+                    int interval = random.Next(minIntervalSeconds, maxIntervalSeconds + 1);
+                    currentTime = currentTime.AddSeconds(interval);
+                }
+
+                DateTime startTime = currentTime;
+                DateTime stopTime = startTime.Add(selectedEvent.Duration);
+
+                EventModel eventModel = new EventModel
+                {
+                    EventName = selectedEvent.EventName,
+                    StartTime = startTime.ToString("HH:mm:ss"),
+                    StopTime = stopTime.ToString("HH:mm:ss")
+                };
+
+                _mainWindowViewModel._eventList.Add(new EventViewModel(eventModel));
+            }
+        }
     }
 }

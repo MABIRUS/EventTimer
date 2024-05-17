@@ -15,14 +15,24 @@
 
         <TextBlock Text="{Binding Time}" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <ListView Grid.Row="1" HorizontalAlignment="Center" ItemsSource="{Binding EventList}">
+        <ListView Grid.Row="1" HorizontalAlignment="Center" ItemsSource="{Binding EventListView}">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Center"/>
                     <Setter Property="FontSize" Value="12"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding BackgroundColor}" Value="Red">
+                            <Setter Property="Background" Value="#7FFF0000"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding BackgroundColor}" Value="Yellow">
+                            <Setter Property="Background" Value="#7FFFFF00"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding BackgroundColor}" Value="Green">
+                            <Setter Property="Background" Value="#7F008000"/>
+                        </DataTrigger>
+                    </Style.Triggers>
                 </Style>
             </ListView.ItemContainerStyle>
-
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Событие">
@@ -49,6 +59,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
+
 
         <Button Grid.Row="2" Content="Режим слежения" FontSize="20" Command="{Binding Tracking}" Height="50" Width="200"/>
 

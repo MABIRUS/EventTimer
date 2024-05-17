@@ -10,10 +10,12 @@ namespace Курсовая_работа.Model
     {
         public string EventName { get; set; }
         public string StartTime { get; set; }
+
+        public TimeSpan Duration { get; set; }
         public string StopTime { get; set; }
         public bool IsRunning { get; set; }
 
-        public EventModel(string eventName, string startTime, string stopTime, bool isRunning = true)
+        public EventModel(string eventName, string startTime, string stopTime, bool isRunning = false)
         {
             EventName = eventName;
             StartTime = startTime;
@@ -26,7 +28,7 @@ namespace Курсовая_работа.Model
             EventName = string.Empty;
             StartTime = string.Empty;
             StopTime = string.Empty;
-            IsRunning = true;
+            IsRunning = false;
         }
     }
 }

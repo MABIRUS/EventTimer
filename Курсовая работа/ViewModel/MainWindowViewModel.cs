@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Data;
 using System.Windows.Input;
 using Курсовая_работа.Commands;
 using Курсовая_работа.Model;
@@ -13,7 +16,7 @@ namespace Курсовая_работа.ViewModel
     internal class MainWindowViewModel : BaseViewModel
     {
         public ObservableCollection<EventViewModel> _eventList;
-        public IEnumerable<EventViewModel> EventList => _eventList;
+        public ICollectionView EventListView { get; }
 
         private TimeModel _time;
 
@@ -34,6 +37,9 @@ namespace Курсовая_работа.ViewModel
             Tracking = new TrackingCommand(this);
 
             _eventList = new ObservableCollection<EventViewModel>();
+            EventListView = CollectionViewSource.GetDefaultView(_eventList);
+            EventListView.Filter = FilterRunningEvents;
+
             Time = new TimeModel();
             StartTimer();
         }
@@ -50,11 +56,37 @@ namespace Курсовая_работа.ViewModel
         {
             Time.UpdateTime();
             OnPropertyChanged(nameof(Time));
+
+            foreach (var eventViewModel in _eventList)
+            {
+                if (DateTime.TryParse(eventViewModel.StartTime, out DateTime startTime) &&
+                    DateTime.TryParse(eventViewModel.StopTime, out DateTime stopTime))
+                {
+                    if (Time.CurrentTime >= startTime && Time.CurrentTime < stopTime)
+                    {
+                        eventViewModel.IsRunning = true;
+                    }
+                    else
+                    {
+                        eventViewModel.IsRunning = false;
+                    }
+
+                    OnPropertyChanged(nameof(eventViewModel.BackgroundColor));
+                }
+            }
+
+            EventListView.Refresh();
         }
 
-        public void RemoveAt(int index)
+
+        private bool FilterRunningEvents(object obj)
         {
-            _eventList.RemoveAt(index);
+            if (obj is EventViewModel eventViewModel)
+            {
+                return eventViewModel.IsRunning;
+            }
+            return false;
         }
+
     }
 }
